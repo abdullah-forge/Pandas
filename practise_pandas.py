@@ -15,3 +15,11 @@ olympics_data.columns
 olympics_data.loc[0]
 # slicing 
 olympics_data.loc[0: 4]
+
+#3
+olympics_data.iloc[0:5,[0,2]]
+for index, row in olympics_data.iterrows():
+  print(index)
+  print(row['Born'])
+
+#4
