@@ -23,3 +23,12 @@ for index, row in olympics_data.iterrows():
   print(row['Born'])
 
 #4
+#Filtering Data
+olympics_data.loc[olympics_data['Born'] == '1924']
+olympics_data.loc[(olympics_data['Born'] == '1924') & (olympics_data['Sex'] == 'Male')]
+olympics_data['Died_Year'] = pd.to_numeric(olympics_data['Died'].str.extract('(\d{4})')[0], errors='coerce')
+
+# Filtering using the new numeric column
+result = olympics_data.loc[(olympics_data['Original name'] == 'Keith') & (olympics_data['Died_Year'] <= 2020)]
+result
+olympics_data[olympics_data['Original name'].str.contains("Keith", case=False, na=False)]
