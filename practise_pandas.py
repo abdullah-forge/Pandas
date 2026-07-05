@@ -10,3 +10,8 @@ df.head()
 df.tail
 
 #2
+olympics_data = pd.read_csv("bios.csv")
+olympics_data.columns
+olympics_data.loc[0]
+# slicing 
+olympics_data.loc[0: 4]
