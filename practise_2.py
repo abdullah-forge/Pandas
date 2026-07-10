@@ -52,3 +52,11 @@ if quantity > 2:
   print("Large Order")
 else:
   print("Small order")
+
+
+#using for loop
+for qty in coffee["Quantity"]:
+  if qty > 3:
+    print("Bulk Order")
+  else:
+    print("Small Order")
