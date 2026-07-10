@@ -44,3 +44,11 @@ all_orders
 # combine
 combined = coffee.join(branches.set_index("City"), on="City")
 combined
+
+combined.to_csv("final_coffee_data.csv",index=False)
+
+quantity = coffee.loc[0,"Quantity"]
+if quantity > 2:
+  print("Large Order")
+else:
+  print("Small order")
