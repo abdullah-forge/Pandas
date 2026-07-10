@@ -21,3 +21,4 @@ coffee.head()
 #save specific column 
 customer_bill = coffee[["Customer", "Total"]]
 customer_bill
+customer_bill.to_csv("customer>bill.csv", index=False)
