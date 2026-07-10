@@ -14,3 +14,6 @@ coffee = coffee.rename(columns={
 })
 coffee.head()
 
+# creating new column and column multiplication
+coffee["Total"] = coffee["Quantity"] * coffee["Price"]
+coffee.head()
