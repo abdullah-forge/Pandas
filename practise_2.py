@@ -60,3 +60,14 @@ for qty in coffee["Quantity"]:
     print("Bulk Order")
   else:
     print("Small Order")
+
+#creating new column using if else
+order_type = []
+for qty in coffee["Quantity"]:
+  if qty > 3:
+    order_type.append("Bulk Order")
+  else:
+    order_type.append("Small Order")
+coffee["Order Type"] = order_type
+coffee
+
