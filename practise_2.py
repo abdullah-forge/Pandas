@@ -17,3 +17,7 @@ coffee.head()
 # creating new column and column multiplication
 coffee["Total"] = coffee["Quantity"] * coffee["Price"]
 coffee.head()
+
+#save specific column 
+customer_bill = coffee[["Customer", "Total"]]
+customer_bill
