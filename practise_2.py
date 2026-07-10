@@ -36,3 +36,11 @@ coffee_branches = pd.merge(
     coffee, branches, on="City"
 )
 coffee_branches
+
+new_orders = pd.read_csv("new_orders.csv")
+#concatenating
+all_orders = pd.concat([coffee, new_orders], ignore_index = True)
+all_orders
+# combine
+combined = coffee.join(branches.set_index("City"), on="City")
+combined
