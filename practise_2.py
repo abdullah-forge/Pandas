@@ -30,3 +30,9 @@ merge = pd.merge(
     coffee,suppliers, on="Coffee_Type"
 )
 merge
+
+branches = pd.read_csv("coffee_branches.csv")
+coffee_branches = pd.merge(
+    coffee, branches, on="City"
+)
+coffee_branches
