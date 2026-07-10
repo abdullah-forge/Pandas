@@ -22,3 +22,11 @@ coffee.head()
 customer_bill = coffee[["Customer", "Total"]]
 customer_bill
 customer_bill.to_csv("customer>bill.csv", index=False)
+
+# merge
+suppliers = pd.read_csv("coffee_suppliers.csv")
+suppliers.head()
+merge = pd.merge(
+    coffee,suppliers, on="Coffee_Type"
+)
+merge
