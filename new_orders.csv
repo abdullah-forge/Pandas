@@ -1,0 +1,4 @@
+Order_ID,Customer,City,Coffee_Type,Size,Quantity,Price_Per_Cup,Discount
+1011,Noor,Lahore,Latte,Large,2,450,20
+1012,Saad,Karachi,Mocha,Small,1,550,10
+1013,Eman,Islamabad,Espresso,Medium,3,350,30

@@ -1,0 +1,11 @@
+Order_ID,Customer,City,Coffee_Type,Size,Quantity,Price_Per_Cup,Discount
+1001,Ali,Lahore,Latte,Small,2,450,20
+1002,Sara,Karachi,Espresso,Medium,1,350,0
+1003,Ahmed,Islamabad,Cappuccino,Large,3,500,30
+1004,Ayesha,Faisalabad,Mocha,Medium,2,550,25
+1005,Hassan,Multan,Americano,Large,4,400,40
+1006,Zainab,Lahore,Latte,Medium,1,450,10
+1007,Usman,Karachi,Espresso,Small,5,350,50
+1008,Maryam,Islamabad,Flat White,Large,2,600,30
+1009,Bilal,Peshawar,Cappuccino,Small,3,500,20
+1010,Fatima,Quetta,Mocha,Medium,2,550,25
