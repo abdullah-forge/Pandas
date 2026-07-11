@@ -55,3 +55,5 @@ coffee["Prevous_Quantity"] = coffee["Quantity"].shift(1)
 coffee["Next_Quantity"] = coffee["Quantity"].shift(-1)
 coffee["Rank"] = coffee["Price_Per_Cup"].rank() 
 coffee["Rank"] = coffee["Price_Per_Cup"].rank(ascending=False)
+
+#rolling
