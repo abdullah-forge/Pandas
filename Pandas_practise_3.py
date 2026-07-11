@@ -57,3 +57,5 @@ coffee["Rank"] = coffee["Price_Per_Cup"].rank()
 coffee["Rank"] = coffee["Price_Per_Cup"].rank(ascending=False)
 
 #rolling
+coffee["Rolling_Average"] = coffee["Quantity"].rolling(3).mean()
+coffee["Rolling_sum"] = coffee["Quantity"].rolling(3).sum()
