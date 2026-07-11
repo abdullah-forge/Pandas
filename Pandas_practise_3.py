@@ -23,3 +23,8 @@ coffee.dropna()
 coffee["Quantity"] = coffee["Quantity"].interpolate()
 
 #Aggregate Functions
+coffee["Quantity"].sum()
+coffee["Price_Per_Cup"].mean()
+coffee["Price_Per_Cup"].max()
+coffee["Price_Per_Cup"].min()
+
