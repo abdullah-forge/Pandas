@@ -41,3 +41,13 @@ coffee.groupby("Coffee_Type").agg({
 })
 
 #Pivot Table
+
+pd.pivot_table(
+    coffee,
+    values="Quantity",
+    index="Coffee_Type",
+    columns="City",
+    aggfunc="sum"
+)
+
+#Advanced Functionality
