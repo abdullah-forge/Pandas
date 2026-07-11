@@ -64,3 +64,7 @@ coffee["Rolling_sum"] = coffee["Quantity"].rolling(3).sum()
 coffee["Running_Total"] = coffee["Quantity"].cumsum()
 
 #reset_index
+group = coffee.groupby("Coffee_Type").sum()
+group.reset_index()
+
+coffee.to_csv("Updated_Coffee_Data.csv", index=False)
