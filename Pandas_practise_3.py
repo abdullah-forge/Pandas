@@ -6,3 +6,8 @@ coffee.shape
 coffee.describe()
 coffee.columns
 
+#Create Some Null Values
+coffee.loc[2,"Quantity"] = None
+coffee.loc[5,"Price_Per_Cup"] = None
+coffee.loc[7, "City"] = None
+coffee
