@@ -11,3 +11,10 @@ coffee.loc[2,"Quantity"] = None
 coffee.loc[5,"Price_Per_Cup"] = None
 coffee.loc[7, "City"] = None
 coffee
+
+#Handling Null Values
+coffee.isna()
+coffee.isna().sum()
+coffee.notna()
+coffee.fillna(0)
+coffee["Quantity"] = coffee["Quantity"].fillna(coffee["Quantity"].mean())
