@@ -18,3 +18,8 @@ coffee.isna().sum()
 coffee.notna()
 coffee.fillna(0)
 coffee["Quantity"] = coffee["Quantity"].fillna(coffee["Quantity"].mean())
+
+coffee.dropna()
+coffee["Quantity"] = coffee["Quantity"].interpolate()
+
+#Aggregate Functions
