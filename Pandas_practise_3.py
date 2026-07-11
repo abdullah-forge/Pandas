@@ -32,3 +32,12 @@ coffee["Price_Per_Cup"].min()
 coffee["Coffee_Type"].value_counts()
 coffee["City"].value_counts()
 
+#groupby
+coffee.groupby("Coffee_Type")["Quantity"].sum()
+coffee.groupby("Coffee_Type")["Price_Per_Cup"].mean()
+coffee.groupby("Coffee_Type").agg({
+    "Quantity":"sum",
+    "Price_Per_Cup":"mean"
+})
+
+#Pivot Table
