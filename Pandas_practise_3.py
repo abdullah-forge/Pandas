@@ -28,3 +28,7 @@ coffee["Price_Per_Cup"].mean()
 coffee["Price_Per_Cup"].max()
 coffee["Price_Per_Cup"].min()
 
+#value_counts
+coffee["Coffee_Type"].value_counts()
+coffee["City"].value_counts()
+
